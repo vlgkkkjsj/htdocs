@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala&display=swap');
+
+*
+{
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+}
+
+body{
+    font-size: 100%;
+    background: linear-gradient(68.15deg, #EECC60, #FB6C34);
+
+ }
+
+
+ .logo
+ {
+    height: 60px;
+ }
+
+
+
+/* .file
+{
+    padding: 4px;
+    width: 200px;
+    padding-bottom: 3px;
+    background-color: #EECC60;
+    color: #FFF;
+    text-align: center;
+    display: block;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 25px;
+}
+ */
+ .cabecalho{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 24px;
+ }
+
+ .navegacao
+ {
+    display: flex;
+    gap: 32px;
+ }
+.cabecalho-menu
+{
+    font-family: 'Sarala', sans-serif;
+    color: #ffffff		;
+    font-weight: 400px;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 20px;
+}
+
+.sair
+{
+    background-color: #EECC60;
+    width: 80px;
+    height: 40px;
+    border: none;
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.096);
+    border-radius: 25px;
+    font-family: 'Sarala', sans-serif;
+    font-weight: 400px;
+    font-size: 15px;
+    color: #ffffff;
+    cursor: pointer;
+    position: absolute;
+    right: 100px;
+}
+.voltar
+{
+    background-color: #EECC60;
+    width: 80px;
+    height: 40px;
+    border: none;
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.096);
+    border-radius: 25px;
+    font-family: 'Sarala', sans-serif;
+    font-weight: 400px;
+    font-size: 15px;
+    color: #ffffff;
+    cursor: pointer;
+    position: absolute;
+    left: 100px;
+}
+
+.voltar:hover
+{
+    background-color: #edbb15;
+}
+.conteudo
+ {
+    margin-bottom: 310px;
+    border-top: solid 0.4px #ffffff;
+ }
+
+ #titulo-principal
+ {
+    font-family: 'Sarala', sans-serif;
+    color: #ffffff;
+    margin-left: 10%;
+ }
+
+ #subtitulo
+ {
+    font-family: 'Righteous', cursive;
+    color: #ffffff;
+    margin-left: 10%;
+ }
+
+ .fieldset
+ {
+    border: 0;
+ }
+
+.formulario
+{
+    font-family: 'Sarala', sans-serif;
+    color: #ffffff;
+    margin-left: 15%;
+    margin-top: 2%;
+    justify-content: center;
+}
+
+.botao
+{
+    background-color: #EECC60;
+    width: 100px;
+    height: 50px;
+    border: none;
+    box-shadow: 4px 5px 4px rgba(0,0,0,0.096);
+    border-radius: 25px;
+    font-family: 'Sarala', sans-serif;
+    font-weight: 400px;
+    font-size: 20px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.botao:hover
+{
+    background-color: #edbb15;
+}
+
+input,textarea,select
+{
+    border-radius: 5px;
+}
+
+.campo
+{
+    margin-bottom: 1em;
+
+}
+
+.campo label{
+    margin-bottom: 0.2em;
+    color: #ffffff;
+    display: block;
+}
+
+.fieldset .grupo .campo{
+    float: left;
+    margin-right: 1em;
+}
+
+
+.campo input[type="file"]
+{
+    display: none;
+}
+
+label [for=arquivo]
+{
+    padding: 20px 10px;
+    width: 200px;
+    background-color: #333;
+    color: #FFF;
+    text-transform: uppercase;
+    text-align: center;
+    display: block;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.campo input[type="text"],.campo input[type="email"] {
+    padding: 0.2em;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.096);
+    display: block;
+}
+
+.campo input[type="file"]
+{
+    padding: 0.2em;
+    display: block;
+}
+
+.campo select option{
+    padding-right: 1em;
+
+}
+
+.campo input:focus, .campo select:focus , .campo textarea:focus
+{
+    background: #ffff;
+}
+
+
+.img-logo-projeto
+{
+    position: absolute;
+    right: 100px;
+    height: 310px;
+    padding-top: 40px;
+}
+.rodape
+{
+    border-top: 0.4px solid #ffffff;
+    padding: 32px;
+}
+
+.desenvolvido{
+    color: #ffffff;
+    font-family: 'Sarala', sans-serif;
+    font-weight: 300px;
+    font-size: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.logo-rodape{
+    height: 48px;
+    display: block;
+    margin: 0 auto;
+}
