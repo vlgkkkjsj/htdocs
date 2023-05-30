@@ -26,24 +26,55 @@
     <h1 id="titulo-principal">Galeria de Fotos :)</h1>
     <p id="subtitulo">Todos os nossos modelos</p>
     </main>
-
-  
         <div class="container">
-            <button id="prev-button"><img src="../img/arrow-right.png"></button>
-            <div class="container-imagem">
-                <img src="../uploads/01.jpeg"class="slider on">
-                <img src="../uploads/02.png" class="slider">
-                <img src="../uploads/03.jpeg" class="slider">
-                <img src="../uploads/04.jpeg" class="slider">
-                <img src="../uploads/05.jpeg" class="slider">
-                <img src="../uploads/06.jpeg" class="slider">
-                <img src="../uploads/07.jpeg" class="slider">
-                <img src="../uploads/08.jpeg" class="slider">
-                <img src="../uploads/09.jpeg" class="slider">
-                <img src="../uploads/010.jpeg" class="slider">
-            </div>
-            <button id="next-button"><img src="../img/arrow-left.png"></button>
-       
+            <div class="card">
+            <img src="../uploads/01.jpeg" alt="Foto 1">
+            <p>Descrição da Foto 1</p>
+            <p class="additional-info">Informações adicionais</p>
+            <p class="show-info">clique para mais Informações</p>
+        </div>
+        <div class="card">
+            <img src="../uploads/03.jpeg" alt="Foto 1">
+            <p>Descrição da Foto 1</p>
+            <p class="additional-info">Informações adicionais</p>
+            <p class="show-info">clique para mais Informações</p>
+        </div>
+        <div class="card">
+            <img src="../uploads/04.jpeg" alt="Foto 1">
+            <p>Descrição da Foto 1</p>
+            <p class="additional-info">Informações adicionais</p>
+            <p class="show-info">clique para mais Informações</p>
+        </div>
+        <div class="card">
+            <img src="../uploads/05.jpeg" alt="Foto 1">
+            <p>Descrição da Foto 1</p>
+            <p class="additional-info">Informações adicionais</p>
+            <p class="show-info">clique para mais Informações</p>
+        </div>
+        <div class="card">
+            <img src="../uploads/06.jpeg" alt="Foto 1">
+            <p>Descrição da Foto 1</p>
+            <p class="additional-info">Informações adicionais</p>
+            <p class="show-info">clique para mais Informações</p>
+        </div>
+        <div class="card">
+            <img src="../uploads/07.jpeg" alt="Foto 1">
+            <p>Descrição da Foto 1</p>
+            <p class="additional-info">Informações adicionais</p>
+            <p class="show-info">clique para mais Informações</p>
+        </div>
+        <div class="card">
+            <img src="../uploads/08.jpeg" alt="Foto 1">
+            <p>Descrição da Foto 1</p>
+            <p class="additional-info">Informações adicionais</p>
+            <p class="show-info">clique para mais Informações</p>
+        </div>
+        <div class="card">
+            <img src="../uploads/01.jpeg" alt="Foto 1">
+            <p>Descrição da Foto 1</p>
+            <p class="additional-info">Informações adicionais</p>
+            <p class="show-info">clique para mais Informações</p>
+        </div>
         </div>
         <div class="me-adote">
        <button class="me-adote" onclick="window.location.href='../tela_inicial/adote.php'">Me adote </button>

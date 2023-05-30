@@ -42,7 +42,7 @@ if($_POST)
 </head>
 <body>
 <header class="cabecalho">
-    <button class="voltar" onclick="window.location.href='../sistema/sistema.php'">voltar</button>
+    <button class="voltar" onclick="window.location.href='../tela_inicial/login.php'">voltar</button>
         <img class="logo" alt="logo do projeto" src="../img/icon.png">
         <nav class="navegacao">
             <a class="cabecalho-menu" href="../sistema/empresarial.php">empresarial</a>

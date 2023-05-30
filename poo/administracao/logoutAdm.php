@@ -1,7 +1,7 @@
 <?php
     session_start();
     session_destroy();
-    header('location: ../administracao/administracao.php');
+    header('../tela_inicial/login.php');
     exit;
-      //resume a sessao atual e logo apos destroi os dados da sessao atual,logo apos isso retorna para o formulario de login
+    //resume a sessao atual e logo apos destroi os dados da sessao atual,logo apos isso retorna para o formulario de login
 ?>

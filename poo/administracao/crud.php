@@ -32,7 +32,7 @@
             <a class="cabecalho-menu" href="?page=listar_animais">listar animais</a>
             <a class="cabecalho-menu" href="?page=listar_empresarial">listar empresarial </a>
         </nav>
-         <button class="sair"  onclick="window.location.href='logoutAdm.php'" >sair</button> 
+         <button class="sair"  onclick="window.location.href='../sistema/logout.php'" >sair</button> 
     </header>
 
     <div class="container">
@@ -48,8 +48,8 @@
                 case "novo":
                     include("novo_usuario.php");
                 break;
-                case "salvar":
-                    include("salvar_usuario.php");
+                case "excluir":
+                    include("excluir_usuario.php");
                     break;
                 case "editar":
                     include("editar_usuario.php");

@@ -1,32 +1,27 @@
 <?php
 
-if(isset($_POST['submit']))
-{
+if (isset($_POST['submit'])) {
     include("../classes/UsuarioDB.php");
 
     $editar = new UsuarioDB();
-    
+
+    $id = $_POST['id']; // Certifique-se de obter o ID corretamente
 
     $nome = filter_var(trim($_POST['nome']), FILTER_SANITIZE_STRING);
     $sobrenome = filter_var(trim($_POST['sobrenome']), FILTER_SANITIZE_STRING);
     $senha = filter_var(trim($_POST['senha']), FILTER_SANITIZE_STRING);
     $email = filter_var(trim($_POST['email']), FILTER_SANITIZE_EMAIL);
 
-      $editacao = $editar->EditarUsuario($id, $nome, $sobrenome, $senha, $email);
-    
-        if($editacao == true)
-        {
-            echo "<script>alert('edição realizada com sucesso')</script>";
-            header('location:?page=listar');
-        }
+    $editacao = $editar->EditarUsuario($id, $nome, $sobrenome, $senha, $email);
 
-    else
-    {
+    if ($editacao == true) {
+        echo "<script>alert('edição realizada com sucesso')</script>";
+        header('location:?page=listar');
+    } else {
         echo "<script>alert('erro ao editar')</script>";
         header('location:?page=editar');
     }
 }
-
 ?>
 
 <!DOCTYPE html>

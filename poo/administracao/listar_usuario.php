@@ -30,13 +30,11 @@ if ($qtd > 0) {
         echo "<td>" . $row->getEmail() . "</td>";
         
         // Se você precisar dos atributos CPF e Email, adicione aqui
-        echo "<td>
-        <button onclick=\"location.href='?page=editar&cpf=" . $usuarioDB->getCpf() . "'\" class='editar'>Editar</button>
-        <button onclick=\"if(confirm('Tem certeza que deseja excluir?')){location.href='?page=salvar&acao=excluir&icpf=" . $usuarioDB->getCpf() . "';}else{false;}\" class='excluir'>Excluir</button>
-      </td>";
+       echo "<td>
+            <button onclick=\"location.href='?page=editar&id=" . $row->getId() . "'\" class='editar'>Editar</button>
+            <button onclick=\"if(confirm('Tem certeza que deseja excluir?')){location.href='?page=excluir&acao=excluir&id=" . $row->getId() . "';}else{false;}\" class='excluir'>Excluir</button>
+            </td>";
         echo "</tr>";
-
-
     }
     echo "</table>";
 } else {

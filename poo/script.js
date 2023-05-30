@@ -1,40 +1,13 @@
-const slider = document.querySelectorAll('.slider');
-const btnPrev = document.getElementById('prev-button');
-const btnNext = document.getElementById('next-button');
-
-let currentSlide = 0;
-
-
-function hideSlider()
-{
-     slider.forEach(item=> item.classList.remove('on'))
+function toggleAdditionalInfo(card) {
+    const additionalInfo = card.querySelector('.additional-info');
+    additionalInfo.style.display = additionalInfo.style.display === 'none' ? 'block' : 'none';
 }
 
-function showSlider()
-{
-    slider[currentSlide].classList.add('on')
-}
-
-function nextSlider()
-{
-    hideSlider()
-    if(currentSlide === slider.length -1 ){
-        currentSlide = 0
-    }else{
-        currentSlide++
-    }
-    showSlider()
-}
-function prevSlider()
-{
-    hideSlider()
-    if(currentSlide === 0){
-        currentSlide = slider.length-1
-    }else{
-        currentSlide--
-    }
-    showSlider()
-}
-
-btnNext.addEventListener('click', nextSlider)
-btnPrev.addEventListener('click', prevSlider)
+// Adiciona evento de clique a todos os botões ou ícones de "Mostrar informações adicionais"
+const showInfoElements = document.querySelectorAll('.show-info');
+showInfoElements.forEach(element => {
+    element.addEventListener('click', () => {
+        const card = element.parentNode;
+        toggleAdditionalInfo(card);
+    });
+});

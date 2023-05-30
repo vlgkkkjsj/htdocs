@@ -23,7 +23,7 @@ if($qtd > 0)
         print "<td>".$row ->email."</td>";
         print "<td>;
         <button onclick=\"location.href='?page=editar_animal&id=".$row->id."';\" class='editar'>Editar</button>
-        <button onclick=\" if(confirm('Tem certeza que deseja excluir?')){location.href='?page=salvar&acao=excluir_animal&id=".$row->id."';}else{false;}\" class='excluir'>Excluir</button>
+        <button onclick=\" if(confirm('Tem certeza que deseja excluir?')){location.href='?page=excluir&acao&id=".$row->id."';}else{false;}\" class='excluir'>Excluir</button>
         </td>";
     print "</tr>";
     }
