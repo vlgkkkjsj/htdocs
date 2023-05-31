@@ -4,16 +4,16 @@
 if(isset($_POST['submit']))
 {
     include('../classes/db2.php');
-    include('../classes/animal2DB.php');
+    include('../classes/adocao.php');
 
-    $animalDB2 = new AnimalDB2();
+    $adocao = new adocao();
 
     $nome =  filter_var(trim($_POST['nome']),FILTER_SANITIZE_STRING);
     $sobrenome =  filter_var(trim($_POST['sobrenome']),FILTER_SANITIZE_STRING);
     $email =  filter_var(trim($_POST['email']),FILTER_SANITIZE_STRING);
-    $nome_bichinho =  filter_var(trim($_POST['sobrenome']),FILTER_SANITIZE_STRING);
+    $nome_bichinho =  filter_var(trim($_POST['nome_bichinho']),FILTER_SANITIZE_STRING);
 
-    $insere = $animalDB2->cadastrarAnimal($nome,$sobrenome,$email,$nome_bichinho);
+    $insere = $adocao->cadastrarAnimal($nome,$sobrenome,$email,$nome_bichinho);
 
     if($insere== true)
     {

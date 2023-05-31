@@ -33,4 +33,26 @@ class AnimalDB
         }
        }
     }
+    public function ListarUsuarios()
+    {
+        $animais = array();
+
+        $sql = "SELECT * FROM animais";
+        $res = mysqli_query($this->conexao->getConn(), $sql);
+
+        while ($row = mysqli_fetch_assoc($res)) {
+            $usuariodb = new UsuarioDB();
+
+            $usuariodb->setNome($row['id']);
+            $usuariodb->setNome($row['nome']);
+            $usuariodb->setSobrenome($row['sobrenome']);
+            $usuariodb->setSenha($row['senha']);
+            $usuariodb->setCpf($row['cpf']);
+            $usuariodb->setEmail($row['email']);
+
+            $usuarios[] = $usuariodb;
+        }
+
+        return $usuarios;
+    }
 }

@@ -2,33 +2,40 @@
 
 <?php
 
-$sql = "SELECT *FROM paraadotar";
-$res = $conn1 -> query($sql);
-$qtd = $res -> num_rows;
 
-if($qtd > 0)
-{
-    print "<table class='table'>";
-    print "<th>Tipo do Animal</th>";
-    print "<th>Localizacao de onde foi encontrado</th>";
-    print "<th> email</th>";
-    print "<th>Ações</th>";
+include("../classes/adocao.php");
 
-    while ($row = $res->fetch_object())
-    {
-        print "<tr>";
-        print "<td>".$row ->id."</td>";
-        print "<td>".$row ->animal."</td>";
-        print "<td>".$row ->localizacao."</td>";
-        print "<td>".$row ->email."</td>";
-        print "<td>;
-        <button onclick=\"location.href='?page=editar_animal&id=".$row->id."';\" class='editar'>Editar</button>
-        <button onclick=\" if(confirm('Tem certeza que deseja excluir?')){location.href='?page=excluir&acao&id=".$row->id."';}else{false;}\" class='excluir'>Excluir</button>
-        </td>";
-    print "</tr>";
+$candidatoss = new adocao(); 
+
+$res = $candidatoss->ListarCandidatos();
+
+$qtd = count($res); 
+
+if ($qtd > 0) {
+    echo "<table class='table'>";
+    echo "<th>ID</th>";
+    echo "<th>Nome</th>";
+    echo "<th>Sobrenome</th>";
+    echo "<th>Email</th>";
+    echo "<th>Nome do Bichinho</th>";
+    echo "<th>Ações</th>";
+    foreach ($res as $row) {
+        echo "<tr>";
+        echo "<td>" . $row->getId() . "</td>";
+        echo "<td>" . $row->getNome() . "</td>";
+        echo "<td>" . $row->getSobrenome() . "</td>";
+        echo "<td>" . $row->getNomeBichinho() . "</td>";
+        echo "<td>" . $row->getEmail() . "</td>";
+        
+        // Se você precisar dos atributos CPF e Email, adicione aqui
+       echo "<td>
+            <button onclick=\"location.href='?page=editar&id=" . $row->getId() . "'\" class='editar'>Editar</button>
+            <button onclick=\"if(confirm('Tem certeza que deseja excluir?')){location.href='?page=excluir&acao=excluir&id=" . $row->getId() . "';}else{false;}\" class='excluir'>Excluir</button>
+            </td>";
+        echo "</tr>";
     }
-    print "</table>";
+    echo "</table>";
+} else {
+    echo "<p class='alert alert-danger'>Nenhum cadastro encontrado!!!</p>";
 }
-else{
-    print("<p class='alert alert-danger'>Nenhum animal encontrado!!!</p>");
-}
+?>
