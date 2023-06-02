@@ -16,7 +16,7 @@
         include('../classes/db2.php');
         include ('../classes/empresaDB.php');
 
-        $empresaCadastro = new EmpresaDB();
+        $empresaCadastro = new empresa();
 
        $empresa = filter_var(trim($_POST['empresa']),FILTER_SANITIZE_STRING);
         $mensagem= filter_var(trim($_POST['mensagem']),FILTER_SANITIZE_STRING);
