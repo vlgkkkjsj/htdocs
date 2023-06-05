@@ -91,21 +91,18 @@ class UsuarioDB
         }
     }
 
-    public function unico($cpf)
+    public function unico($cpf, $email)
     {
-        $unico = "SELECT * FROM cadastro WHERE cpf = ?";
-
+        $unico = "SELECT * FROM cadastro WHERE cpf = ? AND email = ?";
+    
         $stmt = mysqli_prepare($this->conexao->getConn(), $unico);
-        mysqli_stmt_bind_param($stmt, "s", $cpf);
+        mysqli_stmt_bind_param($stmt, "ss", $cpf, $email);
         mysqli_stmt_execute($stmt);
         $res = mysqli_stmt_get_result($stmt);
-
-        if (mysqli_num_rows($res) > 0) {
-            return false;
-        } else {
-            return true;
-        }
+    
+        return mysqli_fetch_assoc($res);
     }
+    
 
     public function cadastrar($nome, $sobrenome, $senha, $confirmacao_senha, $cpf, $email)
     {
@@ -118,7 +115,15 @@ class UsuarioDB
         if (empty($nome) || empty($sobrenome) || empty($senha) || empty($cpf) || empty($email)) {
             print "<script> alert('Certifique-se de que informou todas as informações')</script>";
             print "<script> location.href='cadastro.php'</script>";
-        } else {
+        } 
+        if(strlen($senha)<6)
+        {
+            echo '<script>window.onload = function() {
+                alert("senha menor que 6 digitos!");
+             }</script>';
+        }
+        
+        else {
             $sql = "INSERT INTO cadastro (nome, sobrenome, senha, cpf, email) VALUES ('{$nome}', '{$sobrenome}', '{$senha}', '{$cpf}', '{$email}')";
 
             $res = mysqli_query($this->conexao->getConn(), $sql);

@@ -19,32 +19,31 @@ if(isset($_POST['submit']))
 
 
     
-    if($senha===$confirmacao_senha)
+    if(strlen($senha)<6)
     {
-        $consulta= $cadastro ->unico($cpf);
-
-        if($consulta== false)
-        {
-            header('location:cadastro.php?repetido=senha');
-        }
-        else
-        {
-            $insere = $cadastro->cadastrar($nome,$sobrenome,$senha,$confirmacao_senha,$cpf,$email);
-        }
-        if($insere == true)
-        {
-            header('location:cadastro.php?success=cadastrado');
-        }
+        header('location: cadastro.php?menor=senha');
     }
     else
     {
-        header('location:cadastro.php?erro=senha');
-    }
+        if($senha===$confirmacao_senha)
+        {
+            $consulta = $cadastro->unico($cpf, $email);
 
+if (!empty($consulta['cpf']) || !empty($consulta['email'])) {
+    header('location: cadastro.php?repetido=senha');
+} 
+else {
+    $insere = $cadastro->cadastrar($nome, $sobrenome, $senha, $confirmacao_senha, $cpf, $email);
+
+    if ($insere == true) {
+        header('location: cadastro.php?success=cadastrado');
+    }
 }
 
-
-?>
+ }
+}
+}
+    ?>
 
 <!DOCTYPE html>
 <html lang="pt-BR">
@@ -67,6 +66,10 @@ if(isset($_POST['submit']))
       }
       if(isset($_GET['success'])) {
       echo  "<script>alert('cadastrado com sucesso')</script>";
+      }
+      if(isset($_GET['menor']))
+      {
+        echo "<script>alert('a senha possui menos de 6 caracteres')</script>";
       }
     ?>
 <header class="cabecalho">
