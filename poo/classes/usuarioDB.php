@@ -110,13 +110,20 @@ class UsuarioDB
         $sobrenome = filter_var($sobrenome, FILTER_SANITIZE_STRING);
         $senha = filter_var($senha, FILTER_SANITIZE_STRING);
         $cpf = filter_var($cpf, FILTER_SANITIZE_STRING);
-        $email = filter_var($email, FILTER_SANITIZE_STRING);
+        $email = filter_var($email, FILTER_SANITIZE_EMAIL);
 
         if (empty($nome) || empty($sobrenome) || empty($senha) || empty($cpf) || empty($email)) {
             print "<script> alert('Certifique-se de que informou todas as informações')</script>";
             print "<script> location.href='cadastro.php'</script>";
         } 
-        if(strlen($senha)<6)
+        if(strlen($cpf)<11 || strlen($cpf)>11)
+
+        {
+            echo '<script>window.onload = function() {
+                alert("cpf menor ou maior que 11 digitos!");
+             }</script>';
+        }
+        else if(strlen($senha)<6)
         {
             echo '<script>window.onload = function() {
                 alert("senha menor que 6 digitos!");
@@ -193,7 +200,7 @@ class UsuarioDB
         $stmt = mysqli_prepare($this->conexao->getConn(), $sql);
     
         // Bind dos parâmetros
-        mysqli_stmt_bind_param($stmt, "ssssi", $nome, $sobrenome, $senha, $email, $id);
+        mysqli_stmt_bind_param($stmt, "ssssi", $nome, $sobrenome, $senha, $email, $id); // ssssi = os S indicam uma string o I indica um inteiro
     
         mysqli_stmt_execute($stmt);
     
