@@ -1,6 +1,6 @@
 # Prototipo Ong lar bastet
 
-Seja bem-vindo(a)ao meu protótipo, o projeto é um lar para adoção de animais, desenvolvido em OPP, com CRUD administrativo. Foram utilizadas as tecnologias PHP,JS, HTML e CSS.
+Seja bem-vindo(a)ao meu protótipo, o projeto é um lar para adoção de animais, desenvolvido em OOP, com CRUD administrativo. Foram utilizadas as tecnologias PHP,JS, HTML e CSS.
 
 ## significado das abreviações
 PHP: Hypertext Preprocessor;</br>
