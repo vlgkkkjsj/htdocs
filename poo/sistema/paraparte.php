@@ -10,41 +10,36 @@
 
     $logado = $_SESSION['cpf'];    
 
-    if(isset($_POST['submit']))
-    {
+   
+    if (isset($_POST['submit'])) {
         include('../classes/db2.php');
-        include('../classes/voluntariosDB.php');
-
-
-
-        $voluntarioCadastro = new voluntariosDB();
-
-        $nome = trim(strip_tags($_POST['nome']));
-        $sobrenome = trim(strip_tags($_POST['sobrenome']));
-        $idade = trim(strip_tags($_POST['idade']));
-        $cpf = trim(strip_tags($_POST['cpf']));
-        $email = trim(strip_tags($_POST['email']));
-
-       if($idade == $idade)
-       {
-            $consulta = $voluntarioCadastro->maior($idade);
-
-            if($consulta == false)
-            {
-                header('location:paraparte.php?erro');
-            }
-            else
-            {
-                $insere = $voluntarioCadastro->cadastroVoluntario($nome,$sobrenome,$idade,$cpf,$email);
-            }   
-            if($insere == true)
-            {
-                header('location:paraparte.php?sucesso=paraparte');
-            }
-           
+        include ('../classes/voluntariosDB.php');
+    
+        $voluntario = new voluntariosDB();
+    
+        $nome = filter_var(trim($_POST['nome']), FILTER_SANITIZE_STRING);
+        $sobrenome = filter_var(trim($_POST['sobrenome']), FILTER_SANITIZE_STRING);
+        $idade = filter_var(trim($_POST['idade']), FILTER_VALIDATE_INT);
+        $cpf = filter_var(trim($_POST['cpf']), FILTER_SANITIZE_STRING);
+        $email = filter_var(trim($_POST['email']), FILTER_SANITIZE_EMAIL);
+        
+         $consulta = $voluntario->unico($cpf, $email);
+    
+        if (!empty($consulta)) {
+            header('Location: paraparte.php?repetido=idade');
         } 
-       }
-
+        else if ($idade < 18) {
+            header('Location: paraparte.php?menor=idade');
+        }
+        else {
+            $insere = $voluntario->cadastroVoluntario($nome, $sobrenome, $idade, $cpf, $email);
+            if ($insere) {
+                header('Location: paraparte.php?sucess=cadastrado');
+            }
+        }
+        
+        
+    }
 
 
 ?>
@@ -65,24 +60,24 @@
     
 
 
-    if(isset($_GET['erro']))
+    if(isset($_GET['menor']))
     {
         print "<script>alert('necessario responsavel legal')</script>";
     }
-    if(isset($_GET['menor']))
-    {
-        print "<script>alert('erro')</script>";
-    }
-    if(isset($_GET['sucesso']))
+    if(isset($_GET['sucess']))
     {
         print "<script>alert('sucesso ao cadastrar voluntario')</script>";
+    }
+    if(isset($_GET['repetido']))
+    {
+        print "<script>alert('ja existe')</script>";
     }
 
     ?>
 
 <header class="cabecalho">
     <button class="voltar"  onclick="window.location.href='../sistema/sistema.php'" >voltar</button>
-        <img class="logo" alt="logo" src="icon.png">
+        <img class="logo" alt="logo" src="../img/icon.png">
         <nav class="navegacao">
         <a class="cabecalho-menu" href="../sistema/empresarial.php">empresarial</a>
             <a class="cabecalho-menu" href="../sistema/formParaAdotar.php"> coloque para adocao </a>
@@ -92,8 +87,8 @@
 <main class="conteudo">
     <section class="formulario">    
     <div >
-        <h1 id="titulo-principal">Cadastro via sistema Administrativo</h1>
-        <p id="subtitulo">Complete as informacoes do usuario</p>
+        <h1 id="titulo-principal">Formulario de voluntario</h1>
+        <p id="subtitulo">Complete as informacoes</p>
         <br>
     </div>
     <img class="img-logo-projeto" src="../img/icon.png">

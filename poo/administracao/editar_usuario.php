@@ -50,7 +50,7 @@ if (isset($_POST['submit'])) {
         <fieldset class="grupo">
             <div class="campo" >
                 <label for="nome"><strong>Nome</strong></label>
-                <input type="text" name="nome" id="nome" required>
+                <input type="text" name="nome" id="nome"  required>
             </div>
 
             <div class="campo">

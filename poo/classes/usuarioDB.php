@@ -204,7 +204,8 @@ class UsuarioDB
     
         mysqli_stmt_execute($stmt);
     
-        if (mysqli_affected_rows($this->conexao->getConn()) > 0) {
+        if (mysqli_affected_rows($this->conexao->getConn()) > 0) 
+        {
             return true;
         } else {
             return false;
