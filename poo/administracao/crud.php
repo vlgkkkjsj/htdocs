@@ -26,11 +26,11 @@
 <header class="cabecalho">
         <img class="logo" alt="logo do projeto" src="../img/icon.png">
         <nav class="navegacao">
-            <a class="cabecalho-menu" href="?page=home">home</a>
-            <a class="cabecalho-menu" href="?page=novo"> novo </a>
-            <a class="cabecalho-menu"href="?page=listar">listar</a>
-            <a class="cabecalho-menu" href="?page=listar_animais">listar animais</a>
-            <a class="cabecalho-menu" href="?page=listar_empresarial">listar empresarial </a>
+            <a class="cabecalho-menu" href="?page=novo"> novo Usuario </a>
+            <a class="cabecalho-menu"href="?page=listar">Usuarios</a>
+            <a class="cabecalho-menu" href="?page=listar_animais">Animais</a>
+            <a class="cabecalho-menu" href="?page=ListarVoluntarios">Voluntarios</a>
+            <a class="cabecalho-menu" href="?page=listar_empresarial">Parcerias </a>
         </nav>
          <button class="sair"  onclick="window.location.href='../sistema/logout.php'" >sair</button> 
     </header>
@@ -69,9 +69,12 @@
                 case "editar_empresarial":
                     include("editar_empresarial.php");
                     break;
-                default:
-                    print "<script>alert('Bem vindo ao sistema administrativo')</script>";
-                    print("<h1>Bem vindos! Essa é nossa área somente para administradores, aproveite sua estadia e siga o que seus supervisores manderem</h1>");
+                case "ListarVoluntarios":
+                    include("ListarVoluntarios.php");
+                    break;
+                case "editar_voluntarios":
+                    include("editar_voluntarios.php");
+                    break;
             }
             ?>
         </div>

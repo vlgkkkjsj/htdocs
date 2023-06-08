@@ -5,7 +5,7 @@ if (isset($_POST['submit'])) {
 
     $editar = new UsuarioDB();
 
-    $id = $_POST['id']; // Certifique-se de obter o ID corretamente
+    $id = $_POST['id'];
 
     $nome = filter_var(trim($_POST['nome']), FILTER_SANITIZE_STRING);
     $sobrenome = filter_var(trim($_POST['sobrenome']), FILTER_SANITIZE_STRING);

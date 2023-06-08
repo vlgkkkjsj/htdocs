@@ -152,8 +152,9 @@ class voluntariosDB
             $voluntariodb->setCpf($row['cpf']);
             $voluntariodb->setEmail($row['email']);
 
-            return $voluntarios;
+            $voluntarios[] = $voluntariodb;
         }
+        return $voluntarios;
     }
     public function EditarVoluntarios($id,$nome,$sobrenome,$idade,$cpf,$email)
     {

@@ -60,8 +60,6 @@ if($_POST)
             <a class="cabecalho-menu" href="sobre.php">Sobre Nós</a>
             <a class="cabecalho-menu"href="adote.php">Adote</a>
             <a class="cabecalho-menu" href="">Desenvolvimento</a>
-            <a class= "cabecalho-menu" href="">|</a>
-            <a class= "cabecalho-menu" href=""> login</a>
         </nav>
     </header>
 

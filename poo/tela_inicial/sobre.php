@@ -20,9 +20,9 @@
                 <a class="cabecalho-menu" href="">Comunidade</a>
                 <a class="cabecalho-menu"href="feed.php">Adote</a>
                 <a class="cabecalho-menu" href="">Desenvolvimento</a>
-                <a class= "cabecalho-menu" href="cadastro.php"> cadastre-se</a>
+                <a class= "cabecalho-menu" href="cadastro.php"> Cadastre-se</a>
                 <a class= "cabecalho-menu" href="">|</a>
-                <a class= "cabecalho-menu" href="login.php"> login</a>
+                <a class= "cabecalho-menu" href="login.php"> Login</a>
         </nav>
     </header>
     <main class="conteudo">

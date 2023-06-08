@@ -17,10 +17,10 @@
             <a class="cabecalho-menu" href="tela_inicial/sobre.php">Sobre Nós</a>
             <a class="cabecalho-menu"href="tela_inicial/feed.php">Adote</a>
             <a class="cabecalho-menu" href="">Desenvolvimento</a>
-            <a class= "cabecalho-menu" href="tela_inicial/cadastro.php"style="transform: scale(1); transition: transform 0.5s;" onmouseover="this.style.transform = 'scale(1.1)';" onmouseout="this.style.transform = 'scale(1)';"> cadastre-se</a>
+            <a class= "cabecalho-menu" href="tela_inicial/cadastro.php"style="transform: scale(1); transition: transform 0.5s;" onmouseover="this.style.transform = 'scale(1.1)';" onmouseout="this.style.transform = 'scale(1)';"> Cadastre-se</a>
             <a class= "cabecalho-menu" style= "cursor: default";>|</a>
             <a class= "cabecalho-menu" href="tela_inicial/login.php"style="transform: scale(1); transition: transform 0.5s;" onmouseover="this.style.transform = 'scale(1.1)';" onmouseout="this.style.transform = 'scale(1)';">
- login</a>
+ Login</a>
          <!-- cabecalho principal -->
         </nav>
     </header>
