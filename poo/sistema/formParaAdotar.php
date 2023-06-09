@@ -61,7 +61,7 @@
     <button class="voltar"  onclick="window.location.href='sistema.php'" >voltar</button>
         <img class="logo" alt="logo" src="../img/icon.png">
         <nav class="navegacao">
-        <a class="cabecalho-menu" href="../sistema/empresarial.php">empresarial</a>
+        <a class="cabecalho-menu" href="../sistema/empresarial.php">Parcerias</a>
             <a class="cabecalho-menu"href="../sistema/paraparte.php">faca parte do projeto</a>
             
         </nav>

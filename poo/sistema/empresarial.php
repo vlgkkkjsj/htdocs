@@ -85,8 +85,9 @@
     <main class="conteudo">
     <section class="formulario">    
     <div >
-        <h1 id="titulo-principal">Empresarial</h1>
-        <p id="subtitulo">Complete suas informações</p>
+        <h1 id="titulo-principal">Parcerias</h1>
+        <p id="subtitulo">Complete as informações
+        </p>
         <br>
     </div>
     <img class="img-logo-projeto" src="../img/icon.png">

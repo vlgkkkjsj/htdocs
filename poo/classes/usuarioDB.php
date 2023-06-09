@@ -143,19 +143,26 @@ class UsuarioDB
         }
     }
 
-    public function RedefineSenha($senha, $confirmacao_senha, $cpf)
+    public function RedefineSenha($senha, $cpf)
     {
         $cpf = filter_var($cpf, FILTER_SANITIZE_STRING);
         $senha = filter_var($senha, FILTER_SANITIZE_STRING);
-        $confirmacao_senha = filter_var($confirmacao_senha, FILTER_SANITIZE_STRING);
 
-        if (empty($senha) || empty($confirmacao_senha) || empty($cpf)) {
+        if (empty($senha) || empty($cpf)) {
             print "<script> alert('Certifique-se de que informou todas as informações')</script>";
-            print "<script> location.href='esqueceu.php'</script>";
-        } else {
-            $sql = "UPDATE cadastro SET senha = '{$senha}', confirmacao_senha = '{$confirmacao_senha}' WHERE cpf = '{$cpf}'";
+            print "<script> location.href='esqueceu_senha.php'</script>";
+        } 
 
-            $res = mysqli_query($this->conexao->getConn(), $sql);
+       else if(strlen($senha)<6)
+        {
+            echo '<script>window.onload = function() {
+                alert("senha menor que 6 digitos!");
+             }</script>';
+        }
+        else {
+            $sql = "UPDATE cadastro SET senha = '{$senha}' WHERE cpf = '{$cpf}'";
+
+            $res= mysqli_query($this->conexao->getConn(), $sql);
             
             if (mysqli_affected_rows($this->conexao->getConn()) > 0) {
                 return true;

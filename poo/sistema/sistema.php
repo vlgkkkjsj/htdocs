@@ -29,7 +29,7 @@
         <img class="logo" alt="logo do projeto" src="../img/icon.png">
         <nav class="navegacao">
             
-            <a class="cabecalho-menu" href="empresarial.php">empresarial</a>
+            <a class="cabecalho-menu" href="empresarial.php">Parcerias</a>
             <a class="cabecalho-menu" href="formParaAdotar.php"> coloque para adocao </a>
             <a class="cabecalho-menu"href="paraparte.php">faca parte do projeto</a>
             <a class="cabecalho-menu"href="../administracao/administracao.php">admistracao</a>

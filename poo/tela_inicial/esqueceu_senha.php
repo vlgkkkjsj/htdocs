@@ -17,7 +17,7 @@
         }
     }
 */
-/* if(isset($_POST['submit']))
+if(isset($_POST['submit']))
 {
     require_once('../classes/db2.php');
     require_once('../classes/usuarioDB.php');
@@ -28,19 +28,31 @@
     $confirmacao_senha = filter_var($_POST['confirmacao_senha'], FILTER_SANITIZE_STRING);
     $cpf = filter_var($_POST['cpf'], FILTER_SANITIZE_STRING);
     
-    if($senha===$confirmacao_senha)
+     
+    if(strlen($senha)<6)
     {
-         $insere = $esqueci->RedefineSenha($senha,$confirmacao_senha,$cpf);
-        }
-        if($insere == true)
+        header('location: esqueceu_senha.php?menor=senha');
+    }
+    else
+    {
+        if($senha===$confirmacao_senha)
         {
-            header('location:cadastro.php?success=cadastrado');
+            $esqueceu = $esqueci->RedefineSenha($senha, $cpf);
+            if($esqueceu==true)
+            {
+                header('location: esqueceu_senha.php?success=cadastrado');
+            }
         }
-    
+        else 
+        {
 
+            header('location:esqueceu_senha.php?erro=senha');
 
+        }
+
+    }
 }
- */
+
 
 
 
@@ -55,6 +67,21 @@
     <link rel="stylesheet" href="../css/esqueceu_senha.css">
 </head>
 <body>
+
+
+<?php
+      
+      if(isset($_GET['erro'])) {
+        echo"<script>alert('as senhas nao coincidem')</script>";
+      }
+      if(isset($_GET['success'])) {
+      echo"<script>alert('redefinido  com sucesso')</script>";
+      }
+      if(isset($_GET['menor']))
+      {
+        echo "<script>alert('a senha possui menos de 6 caracteres')</script>";
+      }
+    ?>
 
 <header class="cabecalho">
     <button class="voltar" onclick="window.location.href='login.php'">voltar</button>
