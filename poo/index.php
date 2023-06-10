@@ -47,7 +47,7 @@
         <!-- conteudo secundario da tela principal onde mostra os objetivos principais da ong -->
     </main>
     <footer class="rodape">
-        <h2 class="desenvolvido">Ong lar Bastet</h2>
+        <h2 class="desenvolvido">lar Bastet</h2>
     </footer>
      <!-- rodape onde ira mostrar o simbolo de copyright e nossa logo oficial -->
 </body>

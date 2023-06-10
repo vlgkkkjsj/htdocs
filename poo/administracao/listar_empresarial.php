@@ -29,7 +29,7 @@ if ($qtd > 0) {
         
         // Se você precisar dos atributos CPF e Email, adicione aqui
        echo "<td>
-            <button onclick=\"location.href='?page=editar&id=" . $row->getId() . "'\" class='editar'>Editar</button>
+            <button onclick=\"location.href='?page=editar_empresarial&id=" . $row->getId() . "'\" class='editar'>Editar</button>
             <button onclick=\"if(confirm('Tem certeza que deseja excluir?')){location.href='?page=excluir&acao=excluir&id=" . $row->getId() . "';}else{false;}\" class='excluir'>Excluir</button>
             </td>";
         echo "</tr>";

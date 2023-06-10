@@ -17,11 +17,11 @@ if(isset($_POST['submit']))
 
     if($senha===$confirmacao_senha)
     {
-        $consulta= $cadastro ->unico($cpf);
+        $consulta= $cadastro ->unico($cpf,$email);
 
         if($consulta== false)
         {
-            echo "<script>alert('o cpf ja esta em uso, caso seja o seu,entre em contato conosco')</script>";
+            echo "<script>alert('o cpf ja esta em uso, verique o sistema')</script>";
             header('location:?page=novo');
         }
         else
@@ -104,7 +104,7 @@ if(isset($_POST['submit']))
 </section>
     </main>
     <footer class="rodape">
-        <h2 class="desenvolvido">Desenvolvido por Nome do Produto</h2>
+        <h2 class="desenvolvido">Lar Bastet</h2>
     </footer>
 </body>
 </html>

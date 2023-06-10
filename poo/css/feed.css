@@ -174,7 +174,7 @@ body{
     margin-top: 10px;
     font-size: 14px;
     font-family: 'Righteous', cursive;
-    color: #ffffff;
+    color: #627ABD;
 
 }
 .card .additional-info {
@@ -183,7 +183,7 @@ body{
 
 .card .show-info {
     cursor: pointer;
-    color: #ffffff;
+    color: #627ABD;
     text-decoration: underline;
 }
 .me-adote

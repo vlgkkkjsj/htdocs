@@ -19,27 +19,32 @@
         $empresaCadastro = new empresa();
 
        $empresa = filter_var(trim($_POST['empresa']),FILTER_SANITIZE_STRING);
+       $assunto = filter_var(trim($_POST['assunto']),FILTER_SANITIZE_STRING);
+       $email =  filter_var(trim($_POST['email']),FILTER_SANITIZE_EMAIL);
         $mensagem= filter_var(trim($_POST['mensagem']),FILTER_SANITIZE_STRING);
-        $assunto = filter_var(trim($_POST['assunto']),FILTER_SANITIZE_STRING);
-        $email =  filter_var(trim($_POST['email']),FILTER_SANITIZE_STRING);
+       
+    
 
-        if($empresa === $empresa)
+        
+      if($empresa==$empresa)
+      {
+        $consulta = $empresaCadastro->unico($empresa);
+
+        if($consulta== true)
         {
-            $consulta = $empresaCadastro->unico($empresa);
-
-            if($consulta== true)
-            {
-                header('location:empresarial.php?repetido=empresa');
-            }
-            else
-            {
-                $insere = $empresaCadastro->cadastrarEmpresa($empresa,$mensagem,$assunto,$email);
-            }
+            $insere = $empresaCadastro->cadastrarempresa($empresa,$mensagem,$assunto,$email);
             if($insere == true)
             {
-                header('locaation:empresa.php?sucesso');
+                header('location:empresarial.php?sucesso=cadastrado');
             }
         }
+        else
+        {
+           header('location:empresarial.php?repetido=empresa');
+        }
+       
+      }
+        
 
 
 

@@ -145,7 +145,7 @@ input,textarea,select
 
 .campo label{
     margin-bottom: 0.4em;
-    color: #ffffff;
+    color: #627ABD;
     display: block;
 }
 
@@ -172,7 +172,7 @@ input,textarea,select
 {
     text-decoration: none;
     font-family: 'Sarala', sans-serif;
-    color: #ffffff;
+    color: #627ABD;
     display: flex;
     font-size: 15px;
     margin: auto;
@@ -181,14 +181,6 @@ input,textarea,select
 
 }
 
-.esqueceu
-{
-    text-decoration: none;
-    font-family: 'Sarala', sans-serif;
-    color: #ffffff;
-    font-size: 15px;
-    margin: auto;
-}
 
 .img-logo-projeto
 {

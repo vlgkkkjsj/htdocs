@@ -131,7 +131,7 @@
 </section>
     </main>
     <footer class="rodape">
-        <h2 class="desenvolvido">Ong Lar Bastet</h2>
+        <h2 class="desenvolvido">Lar Bastet</h2>
     </footer>
 </body>
 </html>

@@ -28,15 +28,17 @@
             <div class="conteudo-principal-escrito">
                 <h1 class="conteudo-principal-escrito-titulo">Ong Lar Bastet</h1>
                 <h2 class="conteudo-principal-escrito-subtitulo">Nos conheca um pouco</h2>
-                <p class="texto-principal">O Instituto Fica comigo é uma ONG curitibana, registrada no CRMV, que atua há mais de 10 anos em Curitiba e região que trabalha no controle populacional de cães e gatos.
+                <p class="texto-principal">O Lar Bastet é um projeto recentemente iniciado em 2023 com o objetivo de melhorar a qualidade de vida dos animais em situação de rua. Atuando no campo do bem-estar animal, nosso projeto visa encontrar lares amorosos e permanentes para esses animais. Através de uma plataforma online interativa, proporcionamos uma experiência envolvente para a comunidade que deseja adotar um animal de estimação.
 
-                    Mantemos eventos permanente de adoção de cães e gatos, onde anualmente realizamos entre 700 e 800 doações, todos devidamente vacinados e castrados. A taxa de devolução tem sido inferior a 1%.
-                    
-                    Antes de ser exposto em algum evento de adoção, os animais que estão sob o cuidado dos Instituto passam por avaliação veterinária e recebem todo tratamento necessário para poder ser recolocado com saúde em uma nova família.
-                    
-                    Nossos eventos de adoção são realizados aos sábados e domingos na Casa do Produtor (unidade Rebouças), Reis dos Animais (Novo Mundo e Alto da XV) e no Aconchego do Bicho (São Lourenço). Não conhece nossos eventos? Clique aqui e veja os locais.
-                    
-                    Em abril de 2019 iniciamos a parceira com a Delegacia do Meio Ambiente, representada pelo Delegado Matheus Laiola, que nos auxilia no resgate de animais em situação de alto risco.</p>
+No Lar Bastet, destacamos a importância da adoção responsável e criamos um ambiente virtual onde as pessoas podem explorar perfis de animais disponíveis para adoção, incluindo fotos encantadoras e informações sobre cada um deles. Ao fornecer esse feed de fotos atualizado, facilitamos o processo de escolha e adoção, conectando os interessados com instituições parceiras comprometidas com o resgate animal.
+
+Como um projeto em seus estágios iniciais, enfrentamos desafios empolgantes ao desenvolver a plataforma. A equipe dedicada do Lar Bastet se empenhou em criar uma interface amigável, intuitiva e segura para que as pessoas possam navegar e encontrar o animal perfeito para sua família. Estamos constantemente aprendendo e aprimorando nossos recursos para garantir a melhor experiência possível para os usuários.
+
+Nosso objetivo é diferenciar o Lar Bastet no mercado por meio de nosso compromisso com o bem-estar animal e pela construção de uma comunidade engajada. Além de facilitar a adoção, planejamos expandir nosso escopo e oferecer recursos adicionais, como orientações de cuidados com animais de estimação, informações sobre saúde e bem-estar, e até mesmo a criação de eventos e programas de conscientização para a comunidade.
+
+À medida que avançamos, nossa visão é que o Lar Bastet tenha um impacto positivo significativo na sociedade, não apenas encontrando lares amorosos para animais em necessidade, mas também educando e inspirando as pessoas a se tornarem defensoras do bem-estar animal. Acreditamos que, juntos, podemos criar um mundo onde os animais de rua recebam a compaixão e o cuidado que merecem.
+
+Estamos entusiasmados com a jornada que nos aguarda no Lar Bastet e animados para fazer parcerias com organizações e indivíduos dedicados a tornar o mundo um lugar melhor para os animais.</p>
             </div>
             <img class="img-da-ong" src="icon.png">
         </section>

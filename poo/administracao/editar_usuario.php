@@ -76,7 +76,7 @@ if (isset($_POST['submit'])) {
 </section>
     </main>
     <footer class="rodape">
-        <h2 class="desenvolvido">Desenvolvido por Nome do Produto</h2>
+        <h2 class="desenvolvido">Lar Bastet</h2>
 
     </footer>
 </body>

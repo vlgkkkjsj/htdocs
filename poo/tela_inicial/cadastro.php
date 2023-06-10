@@ -129,7 +129,7 @@ else {
 </section>
     </main>
     <footer class="rodape">
-        <h2 class="desenvolvido">Ong lar bastet</h2>
+        <h2 class="desenvolvido">lar bastet</h2>
     </footer>
 </body>
 </html>

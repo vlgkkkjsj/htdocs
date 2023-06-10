@@ -1,8 +1,27 @@
 <?php
 
-$sql = "SELECT *FROM empresarial WHERE = id".$_REQUEST["id"];
-$res = $conn1 ->query($sql);
-$row = $res -> fetch_object();
+if (isset($_POST['submit'])) {
+    include("../classes/empresaDB.php");
+
+    $editar = new empresa();
+
+    $id = $_POST['id'];
+
+    $empresa = filter_var($empresa, FILTER_SANITIZE_STRING);
+    $mensagem = filter_var($mensagem, FILTER_SANITIZE_STRING);
+    $assunto = filter_var($assunto, FILTER_SANITIZE_STRING);
+    $email = filter_var($email, FILTER_SANITIZE_STRING);
+
+    $editacao = $editar->EditarEmpresa($id,$empresa,$assunto,$email,$mensagem);
+
+    if ($editacao == true) {
+        echo "<script>alert('edição realizada com sucesso')</script>";
+        header('location:?page=listar');
+    } else {
+        echo "<script>alert('erro ao editar')</script>";
+        header('location:?page=editar');
+    }
+}
 ?>
 
 <!DOCTYPE html>
@@ -12,14 +31,9 @@ $row = $res -> fetch_object();
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Editar Empresas</title>
-    <link rel = "stylesheet" href="empresarial.css">
+    <link rel = "stylesheet" href="../css2/empresarial.css">
 </head>
 <body>
-<header class="cabecalho">
-    <button class="voltar"  onclick="window.location.href='sistema.php'" >voltar</button>
-        <img class="logo" alt="logo" src="icon.png">
-        <button class="sair"  onclick="window.location.href='login.php'" >sair</button>
-    </header>
     <main class="conteudo">
     <section class="formulario">    
     <div >
@@ -28,10 +42,9 @@ $row = $res -> fetch_object();
         <br>
     </div>
     <img class="img-logo-projeto" src="icon.png">
-    <form class="formulario" method="POST" action="?page=salvar">
-    <input type="hidden" name="acao" value="editar_empresarial"> 
-    <input type="hidden" name="id" value="<?php print $row->id; ?>" >
-        <input type="hidden" name="acao" value="editar_empresarial">
+    <form class="formulario" method="POST">
+    <input type="hidden" name="id" value="<?php echo isset($_REQUEST['id']) ? $_REQUEST['id'] : ''; ?>">
+    <input type="hidden" name="acao" value="editar_empresarial">
         <fieldset class="grupo">
             <div class="campo" >
                 <label for="nome"><strong>Nome da empresa</strong></label>

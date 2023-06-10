@@ -63,7 +63,7 @@ class empresa
 
         $res = mysqli_query($this->conexao-> getConn(),$result);
 
-        if(mysqli_num_rows($res)>1)
+        if(mysqli_num_rows($res)>0)
         {
             return false;
         }
@@ -85,7 +85,7 @@ class empresa
             print "<script> alert('Certifique-se de que informou todas as informações')</script>";
             print "<script> location.href='cadastro.php'</script>";
         } else {
-            $sql = "INSERT INTO cadastro (empresa, mensagem,assunto, email) VALUES ('{$empresa}', '{$mensagem}', '{$assunto}', '{$email}')";
+            $sql = "INSERT INTO empresarial (empresa, mensagem,assunto, email) VALUES ('{$empresa}', '{$mensagem}', '{$assunto}', '{$email}')";
 
             $res = mysqli_query($this->conexao->getConn(), $sql);
 
@@ -115,6 +115,26 @@ class empresa
         }
 
         return $empresas;
+    }
+    public function EditarEmpresa($id,$empresa,$assunto,$email,$mensagem)
+    {
+        $sql=  "UPDATE empresarial SET empresa=? assunto=?,email=?,mensagem=? WHERE id=?";
+
+        $stmt= mysqli_prepare($this->conexao->getConn(),$sql);
+
+        mysqli_stmt_bind_param($stmt, "ssssi", $nome, $sobrenome, $senha, $email, $id); // ssssi = os S indicam uma string o I indica um inteiro
+    
+        mysqli_stmt_execute($stmt);
+    
+        if (mysqli_affected_rows($this->conexao->getConn()) > 0) 
+        {
+            return true;
+        } 
+        else 
+        {
+            return false;
+        }   
+
     }
 
 
