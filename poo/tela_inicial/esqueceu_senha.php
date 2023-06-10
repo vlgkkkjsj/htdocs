@@ -60,10 +60,11 @@ if(isset($_POST['submit']))
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
+<meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>esqueceu a senha</title>
+    <title>Ong Lar Bastet</title>
+    <link rel="icon" href="img/iconTopo.png" type="image/png">
     <link rel="stylesheet" href="../css/esqueceu_senha.css">
 </head>
 <body>
@@ -85,14 +86,13 @@ if(isset($_POST['submit']))
 
 <header class="cabecalho">
     <button class="voltar" onclick="window.location.href='login.php'">voltar</button>
-        <img class="logo" alt="logo do projeto" src="../img/icon.png">
+        <img class="logo" alt="logo do projeto" src="../img/icon2.png">
         <nav class="navegacao">
-            <a class="cabecalho-menu" href="">Comunidade</a>
+
             <a class="cabecalho-menu" href="sobre.php">Sobre Nós</a>
             <a class="cabecalho-menu"href="adote.php">Adote</a>
-            <a class="cabecalho-menu" href="">Desenvolvimento</a>
             <a class= "cabecalho-menu" href="">|</a>
-            <a class= "cabecalho-menu" href=""> login</a>
+            <a class= "cabecalho-menu" href=""> Login</a>
         </nav>
     </header>
 <main class="conteudo">
@@ -127,7 +127,7 @@ if(isset($_POST['submit']))
       </section>
     </main>
     <footer class="rodape">
-        <h2 class="desenvolvido">Desenvolvido por Nome do Produto</h2>
+        <h2 class="desenvolvido">Ong lar bastet</h2>
     </footer>
 </body>
 </html>

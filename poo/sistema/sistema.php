@@ -17,7 +17,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="../img/icon.png" type="image/png">
+    <link rel="icon" href="../img/iconTopo.png" type="image/png">
     <title>Sistema</title>
     <link rel="stylesheet" href="../css2/sistema.css">
 </head>
@@ -50,9 +50,9 @@
         </section>
         <section class="conteudo-secundario">
             <h3 class="conteudo-secundario-titulo">Listinha</h3>
-            <p class="coisinhas">colocar um bichinho para adocao</p>
-            <p class="coisinhas"> caso seja uma empresa e queira nos ajudar pode contar-nos atraves da nossa pagina de contato</p>
-            <p class="coisinhas">voce pode fazer parte do nosso time e ajudar a fazer a vida de muitos bichinhos melhor</p>
+            <p class="coisinhas-subtitulo">colocar um bichinho para adocao</p>
+            <p class="coisinhas-subtitulo"> caso seja uma empresa e queira nos ajudar pode contar-nos atraves da nossa pagina de contato</p>
+            <p class="coisinhas-subtitulo">voce pode fazer parte do nosso time e ajudar a fazer a vida de muitos bichinhos melhor</p>
         </section>
     </main>
 

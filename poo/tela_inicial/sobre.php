@@ -6,7 +6,7 @@
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre Nos</title>
-    <link rel="icon" href="../img/icon.png" type="image/png">
+    <link rel="icon" href="../img/iconTopo.png" type="image/png">
     <link rel="stylesheet" href="../css/sobre.css">
     <script src="https://kit.fontawesome.com/5f0b0b4e56.js" crossorigin="anonymous" defer></script>
 </head>
@@ -17,9 +17,7 @@
         <img class="logo" alt="logo" src="../img/icon.png">
         <nav>
               
-                <a class="cabecalho-menu" href="">Comunidade</a>
-                <a class="cabecalho-menu"href="feed.php">Adote</a>
-                <a class="cabecalho-menu" href="">Desenvolvimento</a>
+                <a class="cabecalho-menu"href="feed.php">Feed de fotos</a>
                 <a class= "cabecalho-menu" href="cadastro.php"> Cadastre-se</a>
                 <a class= "cabecalho-menu" href="">|</a>
                 <a class= "cabecalho-menu" href="login.php"> Login</a>
@@ -53,11 +51,6 @@
                     </div>
                 <div class="items">
                     <div class="item">
-                    <i class="fa-brands fa-discord fa-2x"></i>
-                    <p>Entre em nosso<a href="https://discord.gg/MjKC3vYs">discord</a></p>
-                    </div>
-                <div class="items">
-                    <div class="item">
                    <i class="fa-brands fa-facebook-f fa-2x"></i>
                     <p> Acesse nossa pagina no facebook</p>
                     </div>
@@ -66,7 +59,7 @@
             </div>
 </main>
 <footer class="rodape">
-        <h2 class="desenvolvido">Desenvolvido por Nome do Produto</h2>
+        <h2 class="desenvolvido">Ong lar bastet</h2>
     </footer>    
 </body>
 </html>

@@ -51,7 +51,7 @@ else {
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="../css/icon.png" type="image/png">
+    <link rel="icon" href="../img/iconTopo.png" type="image/png">
     <title>Cadastre-se</title>
     <link rel ="stylesheet" href="../css/cadastro.css">
 </head>
@@ -74,14 +74,14 @@ else {
     ?>
 <header class="cabecalho">
     <button class="voltar" onclick="window.location.href='../index.php'">voltar</button>
-        <img class="logo" alt="logo do projeto" src="../img/icon.png">
+        <img class="logo" alt="logo do projeto" src="../img/icon2.png">
         <nav class="navegacao">
-            <a class="cabecalho-menu" href="">Comunidade</a>
-            <a class="cabecalho-menu" href="sobre.php">Sobre Nós</a>
-            <a class="cabecalho-menu"href="adote.php">Adote</a>
-            <a class="cabecalho-menu" href="">Desenvolvimento</a>
-            <a class= "cabecalho-menu" style="cursor: default;">|</a>
-            <a class= "cabecalho-menu" href="login.php"> login</a>
+           
+        <a class="cabecalho-menu" href="sobre.php">Sobre Nós</a>
+            <a class="cabecalho-menu"href="feed.php">Adote</a>
+            <a class= "cabecalho-menu" style= "cursor: default";>|</a>
+            <a class= "cabecalho-menu" href="login.php"style="transform: scale(1); transition: transform 0.5s;" onmouseover="this.style.transform = 'scale(1.1)';" onmouseout="this.style.transform = 'scale(1)';">
+ Login</a>
         </nav>
     </header>
     <main class="conteudo">
@@ -129,7 +129,7 @@ else {
 </section>
     </main>
     <footer class="rodape">
-        <h2 class="desenvolvido">Desenvolvido por Nome do Produto</h2>
+        <h2 class="desenvolvido">Ong lar bastet</h2>
     </footer>
 </body>
 </html>

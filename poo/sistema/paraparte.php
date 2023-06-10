@@ -50,7 +50,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="../img/icon.png" type="image/png">
+    <link rel="icon" href="../img/iconTopo.png" type="image/png">
     <title>Para Fazer parte</title>
     <link rel="stylesheet" href="../css2/paraparte.css">
 </head>
@@ -131,8 +131,7 @@
 </section>
     </main>
     <footer class="rodape">
-        <h2 class="desenvolvido">Desenvolvido por Nome do Produto</h2>
-        <img class="logo-rodape" src="é_nois.png">
+        <h2 class="desenvolvido">Ong Lar Bastet</h2>
     </footer>
 </body>
 </html>

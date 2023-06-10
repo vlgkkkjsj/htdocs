@@ -37,7 +37,7 @@ if($_POST)
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="../img/icon.png" type="image/png">
+    <link rel="icon" href="../img/iconTopo.png" type="image/png">
     <title>Login</title>
     <link rel ="stylesheet" href="../css/loginkk.css">
 </head>
@@ -56,21 +56,20 @@ if($_POST)
     <button class="voltar" onclick="window.location.href='../index.php'">voltar</button>
         <img class="logo" alt="logo do projeto" src="../img/icon.png">
         <nav class="navegacao">
-            <a class="cabecalho-menu" href="">Comunidade</a>
             <a class="cabecalho-menu" href="sobre.php">Sobre Nós</a>
             <a class="cabecalho-menu"href="adote.php">Adote</a>
-            <a class="cabecalho-menu" href="">Desenvolvimento</a>
+
         </nav>
     </header>
 
     <main class="conteudo">
     <section class="formulario">    
     <div >
-        <h1 id="titulo-principal">Logue na sua conta :)</h1>
+        <h1 id="titulo-principal">Logue em sua conta :)</h1>
         <p id="subtitulo">insira suas informacoes</p>
         <br>
     </div>
-    <img class="img-logo-projeto" src="../img/icon.png" height="40px">
+    <img class="img-logo-projeto" src="../img/icon2.png" height="40px">
     <form class="formulario" method="POST" action="">
         <fieldset class="grupo">
         <div class="campo">

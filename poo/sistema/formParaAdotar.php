@@ -94,10 +94,19 @@
             <input type="email" name="email" id="email" required>
         </div>
 
-          <div class="campo">     
-                     <label for="arquivo">Enviar arquivo</label>
-                     <input type="file" name="arquivo" id="arquivo">
-          </div>
+        <div>
+            <label for="arquivo" style="   
+             background-color: #627ABD;
+              padding: 20px 10px ;
+             width: 200px;
+              text-align: center;
+              display: block;
+             margin-top: 20px;
+             border-radius: 25px;
+            cursor: pointer;
+            transform: scale(1); transition: transform 0.5s;" onmouseover="this.style.transform = 'scale(1.1)';" onmouseout="this.style.transform = 'scale(1)'">Enviar arquivo</label>
+            <input type="file" name="arquivo" id="arquivo">
+        </div>
 
       <button class="botao" type="submit" name="submit">Concluir</button>
  

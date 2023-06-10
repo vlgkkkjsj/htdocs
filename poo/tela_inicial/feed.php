@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="../img/icon.png" type="image/png">
+    <link rel="icon" href="../img/iconTopo.png" type="image/png">
     <link rel="stylesheet" href="../css/feed.css">
     <script src="../script.js" defer></script>
     <title>feed de fotos</title>
@@ -14,12 +14,12 @@
         <button class="voltar" onclick="window.location.href='../index.php'">voltar</button>
         <img class="logo" alt="logo" src="../img/icon.png">
         <nav class="navegacao">
-            <a class="cabecalho-menu" href="">Comunidade</a>
-            <a class="cabecalho-menu" href="../tela_inicial/sobre.php">Sobre Nós</a>
-            <a class="cabecalho-menu" href="">Desenvolvimento</a>
-            <a class= "cabecalho-menu" href="cadastro.php"> cadastre-se</a>
-            <a class= "cabecalho-menu" href="">|</a>
-            <a class= "cabecalho-menu" href="login.php"> login</a>
+         
+            <a class="cabecalho-menu" href="sobre.php">Sobre Nós</a>
+            <a class= "cabecalho-menu" href="cadastro.php"style="transform: scale(1); transition: transform 0.5s;" onmouseover="this.style.transform = 'scale(1.1)';" onmouseout="this.style.transform = 'scale(1)';"> Cadastre-se</a>
+            <a class= "cabecalho-menu" style= "cursor: default";>|</a>
+            <a class= "cabecalho-menu" href="login.php"style="transform: scale(1); transition: transform 0.5s;" onmouseover="this.style.transform = 'scale(1.1)';" onmouseout="this.style.transform = 'scale(1)';">
+ Login</a>
         </nav>
     </header>
     <main class="conteudo">

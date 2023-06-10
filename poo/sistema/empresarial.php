@@ -122,7 +122,7 @@
 </section>
     </main>
     <footer class="rodape">
-        <h2 class="desenvolvido">Desenvolvido por Nome do Produto</h2>
+        <h2 class="desenvolvido">Ong Lar bastet</h2>
     </footer>
 </body>
 </html>

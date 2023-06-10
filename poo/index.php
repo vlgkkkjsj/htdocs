@@ -4,19 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TCC</title>
-    <link rel="icon" href="img/icon.png" type="image/png">
+    <title>Ong Lar Bastet</title>
+    <link rel="icon" href="img/iconTopo.png" type="image/png">
     <link rel="stylesheet" href="estilo.css">
 </head>
 
 <body>
     <header class="cabecalho">
-        <img class="logo" alt="logo do projeto" src="img/icon.png">
+        <img class="logo" alt="logo do projeto" src="img/icon2.png">
         <nav class="navegacao">
-            <a class="cabecalho-menu" href="">Comunidade</a>
+
             <a class="cabecalho-menu" href="tela_inicial/sobre.php">Sobre Nós</a>
             <a class="cabecalho-menu"href="tela_inicial/feed.php">Adote</a>
-            <a class="cabecalho-menu" href="">Desenvolvimento</a>
             <a class= "cabecalho-menu" href="tela_inicial/cadastro.php"style="transform: scale(1); transition: transform 0.5s;" onmouseover="this.style.transform = 'scale(1.1)';" onmouseout="this.style.transform = 'scale(1)';"> Cadastre-se</a>
             <a class= "cabecalho-menu" style= "cursor: default";>|</a>
             <a class= "cabecalho-menu" href="tela_inicial/login.php"style="transform: scale(1); transition: transform 0.5s;" onmouseover="this.style.transform = 'scale(1.1)';" onmouseout="this.style.transform = 'scale(1)';">
@@ -37,7 +36,7 @@
     <!-- titulos principais e o button clicker onde vai ser redirecionado para a pagina sobre nos, onde o usuario podera ter uma visao melhor 
         sobre o projeto e nossos meios de comunicacao -->
             </div>
-            <img class="img-logo-projeto" src="img/icon.png">
+            <img class="img-logo-projeto" src="img/icon.png" style="border: 0.6px solid #ffffff">
         </section>
         <section class="conteudo-secundario">
             <h3 class="conteudo-secundario-titulo" style="transform: scale(1); transition: transform 0.5s;" onmouseover="this.style.transform = 'scale(1.1)';" onmouseout="this.style.transform = 'scale(1)';">Funcoes do Projeto</h3>
@@ -48,7 +47,7 @@
         <!-- conteudo secundario da tela principal onde mostra os objetivos principais da ong -->
     </main>
     <footer class="rodape">
-        <h2 class="desenvolvido">Desenvolvido por ong lar Bastet</h2>
+        <h2 class="desenvolvido">Ong lar Bastet</h2>
     </footer>
      <!-- rodape onde ira mostrar o simbolo de copyright e nossa logo oficial -->
 </body>

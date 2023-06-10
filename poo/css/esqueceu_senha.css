@@ -11,8 +11,7 @@
 
 body{
     font-size: 100%;
-    background: linear-gradient(68.15deg, #EECC60, #FB6C34);
-
+    background: #E8C2DB;
  }
 
  body::-webkit-scrollbar
@@ -21,21 +20,14 @@ body{
  }
  body::-webkit-scrollbar-track
  {
-    background: #FB6C34;
+    background: #E8C2DB;
  }
  body::-webkit-scrollbar-thumb
  {
-    background-color: #EECC60;
+    background-color: #FFF7EB;
     border-radius: 10px;
-    border: 2px solid #EECC60 ;
+    border: 2px solid #FFF7EB ;
  }
-
-
- .logo
- {
-    height: 60px;
- }
-
 
  .cabecalho{
     display: flex;
@@ -43,6 +35,11 @@ body{
     align-items: center;
     justify-content: space-around;
     padding: 24px;
+ }
+
+ .logo
+ {
+    height: 60px;
  }
 
  .navegacao
@@ -53,7 +50,7 @@ body{
 .cabecalho-menu
 {
     font-family: 'Sarala', sans-serif;
-    color: #ffffff		;
+    color: #627ABD		;
     font-weight: 400px;
     font-size: 18px;
     cursor: pointer;
@@ -62,7 +59,7 @@ body{
 
 .voltar
 {
-    background-color: #EECC60;
+    background-color: #627ABD;
     width: 80px;
     height: 40px;
     border: none;
@@ -77,20 +74,20 @@ body{
     left: 100px;
 }
 
-.voltar:hover
-{
-    background-color: #edbb15;
+.voltar:hover{
+    background-color: #93AAE8;
 }
+
 .conteudo
  {
     margin-bottom: 30vh;
-    border-top: solid 0.4px #ffffff;
+    border-top: solid 0.4px #627ABD;
  }
 
  #titulo-principal
  {
     font-family: 'Sarala', sans-serif;
-    color: #ffffff;
+    color: #627ABD;
     margin-left: 15%;
  }
 
@@ -117,7 +114,7 @@ body{
 
 .botao
 {
-    background-color: #EECC60;
+    background-color: #627ABD;
     width: 100px;
     height: 50px;
     border: none;
@@ -132,7 +129,7 @@ body{
 
 .botao:hover
 {
-    background-color: #edbb15;
+    background-color: #93AAE8;
 }
 
 input,textarea,select
@@ -157,14 +154,15 @@ input,textarea,select
     margin-right: 30em;
 }
 
-.campo input[type="text"],.campo input[type="password"],.campo sekect, .campo textarea{
+.campo input[type="text"],.campo input[type="password"]
+{
     padding: 0.3em;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.096);
     display: inline-block;
 }
 
 
-.campo input:focus, .campo select:focus , .campo textarea:focus
+.campo input:focus
 {
     background: #ffff;
 }
@@ -203,12 +201,12 @@ input,textarea,select
 {
     height: auto;
     margin-top: 30px;
-    border-top: 0.4px solid #ffffff;
+    border-top: 0.4px solid #627ABD;
     padding: 50px;
 }
 
 .desenvolvido{
-    color: #ffffff;
+    color: #627ABD;
     font-family: 'Sarala', sans-serif;
     font-weight: 300px;
     font-size: 10px;
@@ -217,8 +215,3 @@ input,textarea,select
     align-items: center;
 
 }
-/* .logo-rodape{
-    height: 48px;
-    display: block;
-    margin: 0 auto;
-} */
