@@ -1,8 +1,41 @@
 <?php
 
-$sql = "SELECT *FROM paraadotar WHERE id=".$_REQUEST["id"];
-$res = $conn1 -> query($sql);
-$row = $res -> fetch_object();
+if(isset($_POST['submit']))
+{
+    include_once('../classes/db2.php');
+    include_once('../classes/animalDB.php');
+
+
+
+    $animalCadastro = new animalDB();
+
+    $animal = filter_var(trim($_POST['animal']), FILTER_SANITIZE_STRING);
+    $localizacao = filter_var(trim($_POST['localizacao']), FILTER_SANITIZE_STRING);
+    $email = filter_var(trim($_POST['email']),FILTER_SANITIZE_STRING);
+
+   if($animal==$animal)
+   {
+        $consulta = $animalCadastro->unico($email);
+        
+        if($consulta==true)
+        {
+            if($animal=== $animal)
+            {
+
+                $insereAnimal = $animalCadastro ->cadastrarAnimal($animal,$localizacao,$email);
+            }
+            if($insereAnimal == true)
+            {
+                header('location:colocarAdocao.php?sucesso=cadastrado');
+            }
+        }
+        else
+        {
+            header('location:colocarAdocao.php?repetido=email');
+        }
+   }
+}
+
 ?>
 
 <!DOCTYPE html>
@@ -23,10 +56,9 @@ $row = $res -> fetch_object();
         <br>
     </div>
     <img class="img-logo-projeto" src="icon.png">
-    <form class="formulario" method="POST" action="?page=salvar"enctype="multipart/form-data">
-    <input type="hidden" name="acao" value="editar_animal"> 
-    <input type="hidden" name="id" value="<?php print $row->id; ?>" >
-        <input type="hidden" name="acao" value="editar_animal">
+    <form class="formulario" method="POST">
+    <input type="hidden" name="id" value="<?php echo isset($_REQUEST['id']) ? $_REQUEST['id'] : ''; ?>">
+    <input type="hidden" name="acao" value="editar_animal">
         <fieldset class="grupo">
             <div class="campo" >
                 <label for="nome"><strong>Tipo de Animal</strong></label>

@@ -52,14 +52,15 @@ if (isset($_POST['submit'])) {
 </head>
 <body>
     <main class="conteudo">
-    <section class="formulario">    
+    <section class="formulario">   
     <div >
         <h1 id="titulo-principal">Edição de voluntario</h1>
         <p id="subtitulo">Edite as informacoes</p>
         <br>
     </div>
-    <img class="img-logo-projeto" src="../img/icon.png">
-    <form class="formulario" method="POST" action="">
+    <form class="formulario" method="POST">
+    <input type="hidden" name="id" value="<?php echo isset($_REQUEST['id']) ? $_REQUEST['id'] : ''; ?>">
+    <input type="hidden" name="acao" value="editar_voluntarios">
         <fieldset class="grupo">
             <div class="campo" >
                 <label for="nome"><strong>Nome</strong></label>

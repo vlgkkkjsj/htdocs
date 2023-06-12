@@ -18,7 +18,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../img/iconTopo.png" type="image/png">
-    <title>Sistema</title>
+    <title>Lar Bastet</title>
     <link rel="stylesheet" href="../css2/sistema.css">
 </head>
 
@@ -30,7 +30,7 @@
         <nav class="navegacao">
             
             <a class="cabecalho-menu" href="empresarial.php">Parcerias</a>
-            <a class="cabecalho-menu" href="formParaAdotar.php"> coloque para adocao </a>
+            <a class="cabecalho-menu" href="colocarAdocao.php"> coloque para adocao </a>
             <a class="cabecalho-menu"href="paraparte.php">faca parte do projeto</a>
             <a class="cabecalho-menu"href="../administracao/administracao.php">admistracao</a>
             
