@@ -79,8 +79,8 @@
     <button class="voltar"  onclick="window.location.href='../sistema/sistema.php'" >voltar</button>
         <img class="logo" alt="logo" src="../img/icon.png">
         <nav class="navegacao">
-        <a class="cabecalho-menu" href="../sistema/empresarial.php">Parcerias</a>
-            <a class="cabecalho-menu" href="../sistema/formParaAdotar.php"> coloque para adocao </a>
+        <a class="cabecalho-menu" href="empresarial.php">Parcerias</a>
+            <a class="cabecalho-menu" href="colocarAdocao.php"> coloque para adocao </a>
         </nav>
         <button class="sair"  onclick="window.location.href='logout.php'" >sair</button>
     </header>

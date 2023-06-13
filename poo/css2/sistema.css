@@ -132,7 +132,7 @@ body::-webkit-scrollbar-thumb
     padding: 20px;
     margin: 20px;
     text-align: justify;
-    color: #ffffff;
+    color: #627ABD;
 }
 
 .img-da-ong
@@ -164,17 +164,17 @@ body::-webkit-scrollbar-thumb
     font-family: 'Sarala', sans-serif;
     font-weight: 300px;
     font-size: 18px;
-    color: #ffffff;
+    color: #627ABD;
 }
 
 .rodape
 {
-    border-top: 0.4px solid #ffffff;
+    border-top: 0.4px solid #627ABD;
     padding: 32px;
 }
 
 .desenvolvido{
-    color: #ffffff;
+    color: #627ABD;
     font-family: 'Sarala', sans-serif;
     font-weight: 300px;
     font-size: 10px;

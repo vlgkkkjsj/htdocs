@@ -100,7 +100,7 @@
  .titulo-principal
  {
     font-family: 'Sarala', sans-serif;
-    color: #ffffff;
+    color: #627ABD;
     margin-left: 10%;
  }
 
@@ -113,7 +113,7 @@
 
 .botao
 {
-    background-color: #EECC60;
+    background-color: #627ABD;
     width: 100px;
     height: 50px;
     border: none;
@@ -129,7 +129,7 @@
 
 .botao:hover
 {
-    background-color: #edbb15;
+    background-color: #93AAE8;
 }
 
 .img-logo-projeto
@@ -141,12 +141,12 @@
 }
 .rodape
 {
-    border-top: 0.4px solid #ffffff;
+    border-top: 0.4px solid #627ABD;
     padding: 32px;
 }
 
 .desenvolvido{
-    color: #ffffff;
+    color: #627ABD;
     font-family: 'Sarala', sans-serif;
     font-weight: 300px;
     font-size: 10px;
@@ -154,11 +154,6 @@
     flex-direction: column;
     align-items: center;
 
-}
-.logo-rodape{
-    height: 48px;
-    display: block;
-    margin: 0 auto;
 }
 
 table

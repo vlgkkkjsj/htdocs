@@ -117,7 +117,7 @@ class AnimalDB
 
     public function EditarAnimal($animal,$localizacao,$email)
     {
-        $sql=  "UPDATE animal SET animal=? localizacao=?,email=? WHERE id=?";
+        $sql=  "UPDATE animais SET animal=? localizacao=?,email=? WHERE id=?";
 
         $stmt= mysqli_prepare($this->conexao->getConn(),$sql);
 
@@ -133,5 +133,18 @@ class AnimalDB
         {
             return false;
         }   
+    }
+    public function DeletarAnimal($id)
+    {
+        $sql = "DELETE FROM animais WHERE id = '" . $id . "'";
+    
+        $res = mysqli_query($this->conexao->getConn(), $sql);
+    
+        if ($res == true) {
+            print "<script> alert('animal deletado com sucesso')</script>";
+            print "<script> location.href='?page=listar_animal';</script>";
+        } else {
+            print "<script> alert('Falha ao deletar animal')</script>";
+        }
     }
 }

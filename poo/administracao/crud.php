@@ -75,6 +75,16 @@
                 case "editar_voluntarios":
                     include("editar_voluntarios.php");
                     break;
+                case "excluir_animais":
+                    include("excluir_animal.php");
+                    break;
+                case "excluir_voluntarios":
+                    include("excluir_voluntarios.php");
+                    break;
+                case "excluir_empresas":
+                    include("excluir_empresas.php");
+                    break;
+                
             }
             ?>
         </div>

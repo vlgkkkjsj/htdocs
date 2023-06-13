@@ -134,7 +134,19 @@ class empresa
         {
             return false;
         }   
-
+    }
+    public function DeletarEmpresas($id)
+    {
+        $sql = "DELETE FROM empresarial WHERE id = '" . $id . "'";
+    
+        $res = mysqli_query($this->conexao->getConn(), $sql);
+    
+        if ($res == true) {
+            print "<script> alert('empresa deletada com sucesso')</script>";
+            print "<script> location.href='?page=listar_empresarial';</script>";
+        } else {
+            print "<script> alert('Falha ao deletar empresa')</script>";
+        }
     }
 
 
