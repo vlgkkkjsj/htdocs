@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 07-Jun-2023 às 13:48
+-- Tempo de geração: 13-Jun-2023 às 03:55
 -- Versão do servidor: 10.4.28-MariaDB
 -- versão do PHP: 8.2.4
 
@@ -82,7 +82,7 @@ CREATE TABLE `cadastro` (
 --
 
 INSERT INTO `cadastro` (`id`, `nome`, `sobrenome`, `senha`, `cpf`, `email`) VALUES
-(7, 'victor luis', 'eurich goedicke', '123', '123', 'vic.vl674@gmail.com');
+(7, 'victor luis', 'eurich goedicke', '123456', '123', 'vic.vl674@gmail.com');
 
 -- --------------------------------------------------------
 
@@ -97,6 +97,14 @@ CREATE TABLE `empresarial` (
   `email` varchar(255) NOT NULL,
   `mensagem` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Extraindo dados da tabela `empresarial`
+--
+
+INSERT INTO `empresarial` (`id`, `empresa`, `assunto`, `email`, `mensagem`) VALUES
+(1, 'alfandega', 'alfandega', 'vicdsdadsad@gmail.com', 'sucesso'),
+(2, 'sadsadassad', 'alfandega', 'vicdsdadsad@gmail.com', 'dasdsadsadasdasdsad');
 
 --
 -- Índices para tabelas despejadas
@@ -140,7 +148,7 @@ ALTER TABLE `cadastro`
 -- AUTO_INCREMENT de tabela `empresarial`
 --
 ALTER TABLE `empresarial`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
