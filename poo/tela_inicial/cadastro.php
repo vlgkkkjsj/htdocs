@@ -78,7 +78,7 @@ else {
         <nav class="navegacao">
            
         <a class="cabecalho-menu" href="sobre.php">Sobre Nós</a>
-            <a class="cabecalho-menu"href="feed.php">Adote</a>
+            <a class="cabecalho-menu"href="feed.php">Feed de Fotos</a>
             <a class= "cabecalho-menu" style= "cursor: default";>|</a>
             <a class= "cabecalho-menu" href="login.php"style="transform: scale(1); transition: transform 0.5s;" onmouseover="this.style.transform = 'scale(1.1)';" onmouseout="this.style.transform = 'scale(1)';">
  Login</a>

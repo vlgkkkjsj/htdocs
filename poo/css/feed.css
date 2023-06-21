@@ -11,6 +11,8 @@
 body{
     font-size: 100%;
     background: #E8C2DB;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
  }
 
  body::-webkit-scrollbar

@@ -206,7 +206,7 @@ class UsuarioDB
     
         $stmt = mysqli_prepare($this->conexao->getConn(), $sql);
     
-        // Bind dos parâmetros
+        // Bind dos parâmetros,vincula variaveis a uma prepared statement como parâmetros
         mysqli_stmt_bind_param($stmt, "ssssi", $nome, $sobrenome, $senha, $email, $id); // ssssi = os S indicam uma string o I indica um inteiro
     
         mysqli_stmt_execute($stmt);

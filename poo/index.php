@@ -41,7 +41,7 @@
         <section class="conteudo-secundario">
             <h3 class="conteudo-secundario-titulo" style="transform: scale(1); transition: transform 0.5s;" onmouseover="this.style.transform = 'scale(1.1)';" onmouseout="this.style.transform = 'scale(1)';">Funcoes do Projeto</h3>
             <p class="conteudo-secundario-paragrafo">1.Conseguir um <strong > lar</strong> para nossos amiguinhos</p>
-            <p class="conteudo-secundario-paragrafo">2.Tratas e cuidar nossos amiguinhos que estao em situacao de <strong>rua</strong></p>
+            <p class="conteudo-secundario-paragrafo">2.Tratar e cuidar nossos amiguinhos que estao em situacao de <strong>rua</strong></p>
             <p class="conteudo-secundario-paragrafo">3.Arrecadação de <strong>alimentos</strong> para nossos anjinhos</p>
         </section>
         <!-- conteudo secundario da tela principal onde mostra os objetivos principais da ong -->

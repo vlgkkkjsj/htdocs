@@ -57,7 +57,7 @@ if($_POST)
         <img class="logo" alt="logo do projeto" src="../img/icon.png">
         <nav class="navegacao">
             <a class="cabecalho-menu" href="sobre.php">Sobre Nós</a>
-            <a class="cabecalho-menu"href="adote.php">Adote</a>
+            <a class="cabecalho-menu"href="feed.php">Feed de Fotos</a>
 
         </nav>
     </header>

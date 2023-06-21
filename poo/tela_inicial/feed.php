@@ -29,57 +29,57 @@
         <div class="container">
             <div class="card">
             <img src="../uploads/01.jpeg" alt="Foto 1">
-            <p>Descrição da Foto 1</p>
-            <p class="additional-info">Informações adicionais</p>
-            <p class="show-info">clique para mais Informações</p>
+            <p>Ringo</p>
+            <p class="additional-info">Macho</p>
+            <p class="show-info">1 ano, Fiv/Fielv negativo.</p>
         </div>
         <div class="card">
             <img src="../uploads/03.jpeg" alt="Foto 1">
-            <p>Descrição da Foto 1</p>
-            <p class="additional-info">Informações adicionais</p>
-            <p class="show-info">clique para mais Informações</p>
+            <p>Pipoca</p>
+            <p class="additional-info">Fêmea</p>
+            <p class="show-info">6 meses, Fiv/Fielv positivo.</p>
         </div>
         <div class="card">
             <img src="../uploads/04.jpeg" alt="Foto 1">
-            <p>Descrição da Foto 1</p>
-            <p class="additional-info">Informações adicionais</p>
-            <p class="show-info">clique para mais Informações</p>
+            <p>Lily</p>
+            <p class="additional-info">Fêmea</p>
+            <p class="show-info">5 meses,castração agendada.</p>
         </div>
         <div class="card">
             <img src="../uploads/05.jpeg" alt="Foto 1">
-            <p>Descrição da Foto 1</p>
-            <p class="additional-info">Informações adicionais</p>
-            <p class="show-info">clique para mais Informações</p>
+            <p>Cookie</p>
+            <p class="additional-info">Fêmea</p>
+            <p class="show-info">9 meses, Fiv/Fielv positivo.</p>
         </div>
         <div class="card">
             <img src="../uploads/06.jpeg" alt="Foto 1">
-            <p>Descrição da Foto 1</p>
-            <p class="additional-info">Informações adicionais</p>
-            <p class="show-info">clique para mais Informações</p>
+            <p>Doroty</p>
+            <p class="additional-info">Fêmea</p>
+            <p class="show-info">3 anos, castrada.</p>
         </div>
         <div class="card">
             <img src="../uploads/07.jpeg" alt="Foto 1">
-            <p>Descrição da Foto 1</p>
-            <p class="additional-info">Informações adicionais</p>
-            <p class="show-info">clique para mais Informações</p>
+            <p>Nino</p>
+            <p class="additional-info">Macho</p>
+            <p class="show-info">7 meses, não é castrado.</p>
         </div>
         <div class="card">
             <img src="../uploads/08.jpeg" alt="Foto 1">
-            <p>Descrição da Foto 1</p>
-            <p class="additional-info">Informações adicionais</p>
-            <p class="show-info">clique para mais Informações</p>
+            <p>Toco</p>
+            <p class="additional-info">Macho</p>
+            <p class="show-info">4 meses, não é castrado.</p>
         </div>
         <div class="card">
             <img src="../uploads/01.jpeg" alt="Foto 1">
-            <p>Descrição da Foto 1</p>
-            <p class="additional-info">Informações adicionais</p>
-            <p class="show-info">clique para mais Informações</p>
+            <p>Gigi</p>
+            <p class="additional-info">Fêmea</p>
+            <p class="show-info">5 anos, Fiv/Fielv negativo.</p>
         </div>
         </div>
         <div class="me-adote">
        <button class="me-adote" onclick="window.location.href='../tela_inicial/adote.php'">Me adote </button>
        </div>
-   
+
     <footer class="rodape">
         <h2 class="desenvolvido">Lar Bastet</h2>
     </footer>

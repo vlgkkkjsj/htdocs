@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 13-Jun-2023 às 03:55
+-- Tempo de geração: 13-Jun-2023 às 04:23
 -- Versão do servidor: 10.4.28-MariaDB
 -- versão do PHP: 8.2.4
 
@@ -65,6 +65,20 @@ INSERT INTO `adocao` (`id`, `nome`, `sobrenome`, `email`, `nome_bichinho`) VALUE
 -- --------------------------------------------------------
 
 --
+-- Estrutura da tabela `animais`
+--
+
+CREATE TABLE `animais` (
+  `id` int(11) NOT NULL,
+  `animal` varchar(255) NOT NULL,
+  `localizacao` varchar(255) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `imagem` longblob DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- --------------------------------------------------------
+
+--
 -- Estrutura da tabela `cadastro`
 --
 
@@ -106,6 +120,31 @@ INSERT INTO `empresarial` (`id`, `empresa`, `assunto`, `email`, `mensagem`) VALU
 (1, 'alfandega', 'alfandega', 'vicdsdadsad@gmail.com', 'sucesso'),
 (2, 'sadsadassad', 'alfandega', 'vicdsdadsad@gmail.com', 'dasdsadsadasdasdsad');
 
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `voluntarios`
+--
+
+CREATE TABLE `voluntarios` (
+  `id` int(11) NOT NULL,
+  `nome` varchar(255) NOT NULL,
+  `sobrenome` varchar(255) NOT NULL,
+  `idade` int(3) NOT NULL,
+  `cpf` varchar(255) NOT NULL,
+  `email` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Extraindo dados da tabela `voluntarios`
+--
+
+INSERT INTO `voluntarios` (`id`, `nome`, `sobrenome`, `idade`, `cpf`, `email`) VALUES
+(1, 'victor', 'eurich goedicke', 19, '12345678900', 'vic.vl674@gmail.com'),
+(4, 'ckxksaksadkadsk', 'kdaskdsksakdk', 19, '11111111111', 'vicdsdadsad@gmail.com'),
+(5, 'victor luis', 'eurich goedicke', 19, '12345678999', 'vicdsdadsad@gmail.com'),
+(6, 'victor ', 'eurich goedicke', 19, '12345678955', 'vicamagabs@gmail.com');
+
 --
 -- Índices para tabelas despejadas
 --
@@ -114,6 +153,12 @@ INSERT INTO `empresarial` (`id`, `empresa`, `assunto`, `email`, `mensagem`) VALU
 -- Índices para tabela `adocao`
 --
 ALTER TABLE `adocao`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Índices para tabela `animais`
+--
+ALTER TABLE `animais`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -129,6 +174,12 @@ ALTER TABLE `empresarial`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Índices para tabela `voluntarios`
+--
+ALTER TABLE `voluntarios`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- AUTO_INCREMENT de tabelas despejadas
 --
 
@@ -137,6 +188,12 @@ ALTER TABLE `empresarial`
 --
 ALTER TABLE `adocao`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- AUTO_INCREMENT de tabela `animais`
+--
+ALTER TABLE `animais`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- AUTO_INCREMENT de tabela `cadastro`
@@ -149,6 +206,12 @@ ALTER TABLE `cadastro`
 --
 ALTER TABLE `empresarial`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- AUTO_INCREMENT de tabela `voluntarios`
+--
+ALTER TABLE `voluntarios`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

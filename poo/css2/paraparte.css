@@ -11,6 +11,8 @@
 body{
    font-size: 100%;
    background: #E8C2DB;
+   text-rendering: optimizeLegibility;
+   -webkit-font-smoothing: antialiased;
 }
 
 
@@ -187,7 +189,7 @@ input
 
 .campo label{
     margin-bottom: 0.2em;
-    color: #ffffff;
+    color: #627ABD;
     display: block;
 }
 

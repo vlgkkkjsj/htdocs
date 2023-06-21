@@ -12,6 +12,8 @@
 body{
     font-size: 100%;
     background: #E8C2DB;
+    text-rendering: optimizeLegibility;
+   -webkit-font-smoothing: antialiased;
  }
 
  body::-webkit-scrollbar
@@ -172,7 +174,7 @@ input
 {
     text-decoration: none;
     font-family: 'Sarala', sans-serif;
-    color: #ffffff;
+    color: #627ABD;
     display: flex;
     font-size: 15px;
     margin: auto;
@@ -185,7 +187,7 @@ input
 {
     text-decoration: none;
     font-family: 'Sarala', sans-serif;
-    color: #ffffff;
+    color: #627ABD;
     font-size: 15px;
     margin: auto;
 }

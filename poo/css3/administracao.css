@@ -11,6 +11,8 @@
 body{
    font-size: 100%;
    background: #E8C2DB;
+   text-rendering: optimizeLegibility;
+   -webkit-font-smoothing: antialiased;
 }
 
 
@@ -137,21 +139,21 @@ body::-webkit-scrollbar-thumb
 
 .conteudo
  {
-    margin-bottom: 190px;
+    margin-bottom: 430px;
     border-top: solid 0.4px #627ABD;
  }
 
  #titulo-principal
  {
     font-family: 'Sarala', sans-serif;
-    color: #ffffff;
+    color: #627ABD;
     margin-left: 10%;
  }
 
  #subtitulo
  {
     font-family: 'Righteous', cursive;
-    color: #ffffff;
+    color: #627ABD;
     margin-left: 10%;
  }
 
@@ -187,7 +189,7 @@ input
 
 .campo label{
     margin-bottom: 0.2em;
-    color: #ffffff;
+    color: #627ABD;
     display: block;
 }
 
@@ -196,7 +198,7 @@ input
     margin-right: 1em;
 }
 
-.campo input[type="text"],.campo input[type="email"]{
+.campo input[type="text"],.campo input[type="password"]{
     padding: 0.2em;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.096);
     display: block;
@@ -233,13 +235,15 @@ input
 {
     position: absolute;
     right: 100px;
-    height: 430px;
+    height: 200px;
     padding-top: 40px;
 }
 .rodape
 {
+    height: 200px;
+    margin-top: 7px;
     border-top: 0.4px solid #627ABD;
-    padding: 32px;
+    padding: 50px;
 }
 
 .desenvolvido{
@@ -252,5 +256,3 @@ input
     align-items: center;
 
 }
-
-
