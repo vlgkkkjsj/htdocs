@@ -93,9 +93,11 @@ class UsuarioDB
 
     public function unico($cpf, $email)
     {
+          //Prepara a consulta SQL e retorna um identificador de instrução a ser usado para outras operações na instrução.
         $unico = "SELECT * FROM cadastro WHERE cpf = ? AND email = ?";
     
         $stmt = mysqli_prepare($this->conexao->getConn(), $unico);
+         // Bind dos parâmetros,vincula variaveis a uma prepared statement como parâmetros
         mysqli_stmt_bind_param($stmt, "ss", $cpf, $email);
         mysqli_stmt_execute($stmt);
         $res = mysqli_stmt_get_result($stmt);
@@ -203,7 +205,7 @@ class UsuarioDB
                     senha = ?,
                     email = ?
                 WHERE id = ?";
-    
+  
         $stmt = mysqli_prepare($this->conexao->getConn(), $sql);
     
         // Bind dos parâmetros,vincula variaveis a uma prepared statement como parâmetros

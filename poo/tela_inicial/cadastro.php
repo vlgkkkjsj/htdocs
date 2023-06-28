@@ -61,13 +61,13 @@ else {
       if(isset($_GET['erro'])) {
         echo"<script>alert('as senhas nao coincidem')</script>";
       }
-      if(isset($_GET['repetido'])) {
+      else if(isset($_GET['repetido'])) {
         echo "<script>alert('usuario ja existe')</script>";
       }
-      if(isset($_GET['success'])) {
+      else if(isset($_GET['success'])) {
       echo  "<script>alert('cadastrado com sucesso')</script>";
       }
-      if(isset($_GET['menor']))
+      else if(isset($_GET['menor']))
       {
         echo "<script>alert('a senha possui menos de 6 caracteres')</script>";
       }
